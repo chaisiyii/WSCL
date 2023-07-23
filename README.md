@@ -13,6 +13,10 @@ b. **Classifier Finetuning stage**. Firstly we generate pseudo labels for _Malig
 
 Except for the two training files and one pseudo labeling file mentioned above, we also provide:
 
+----evaluation.py (for validating)
+
+----vis_cam.py (visualize class activation maps)
+
 ----data
 
 ------------augmentation.py (data augmentations for two stages)
@@ -32,8 +36,4 @@ Except for the two training files and one pseudo labeling file mentioned above, 
 ------------loss.py (re-weight cross-entropy loss and self-supervised contrastive loss)
 
 ------------train.py (tools for training and validating, including adjusting learning rate, record losses, reading prototypes and calculate accuracy)
-
-----evaluation.py (for validating)
-
-----vis_cam.py (visualize class activation maps)
       
