@@ -152,7 +152,7 @@ def train(train_loader, model, classifier, criterion, optimizer, epoch, opt):
     """
         One epoch training.
     """
-    model.eval()
+    model.train()
     classifier.train()
 
     batch_time, data_time = Record(), Record()
