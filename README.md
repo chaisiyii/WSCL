@@ -8,7 +8,7 @@ Our method consist two stages:
 
 a. **Feature Learning Stage**. We use a simple _ResNet50_ to extract features. In this stage we train the extractor in the file "train_simclr.py". 
 
-b. **Classifier Finetuning stage**. Firstly we generate pseudo labels for _Malignant_ images based on ensemble predictions and sort their prototypes by the ensemble confidences (in "generate_pseudo.py"). Then we choose topk (128) prototypes to calibrate the generated logits for  _Malignant_ type, acquring the final prediction results (in "finetune.py").
+b. **Classifier Finetuning stage**. Firstly we generate pseudo labels for _Malignant_ images based on ensemble predictions (in "generate_pseudo.py"). Then we finetune the classfiers, acquring the final prediction results (in "finetune.py").
 
 
 Except for the two training files and one pseudo labeling file mentioned above, we also provide:
